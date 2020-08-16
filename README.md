@@ -3,4 +3,4 @@ Saw the project at https://github.com/feinomenon/TouhouPlayer and wanted to see 
 
 How to run
 ------------
-Start Touhou 6: Embodiment of Scarlet Devil, run 'train.py' click the game's window to gain focus and wait for profit maybe?
+Start Touhou 6 - Embodiment of Scarlet Devil, run 'train.py' click the game's window to gain focus and wait for profit maybe?
