@@ -7,4 +7,4 @@ Start Touhou 6 - Embodiment of Scarlet Devil, run 'train.py' with administrator 
 
 About this bot
 -------------
-Uses a Deep-Q-Learning algorithm to train a model which plays Touhou 6.
+My attempt at using a Deep-Q-Learning algorithm to train a model which plays Touhou 6.
