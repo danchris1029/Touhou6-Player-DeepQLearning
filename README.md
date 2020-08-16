@@ -1,1 +1,1 @@
-# Touhou7-Player-DeepQLearning
+# Touhou6-Player-DeepQLearning
