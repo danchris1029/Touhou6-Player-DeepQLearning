@@ -1,10 +1,10 @@
 # Touhou6-Player-DeepQLearning
-Saw the project at https://github.com/feinomenon/TouhouPlayer and and got inspired build a bot that learns to play Touhou 6: Embodiment of Scarlet Devil by itself.
+I saw the project over at https://github.com/feinomenon/TouhouPlayer and and was inspired to build a bot that learns how to play Touhou 6: Embodiment of Scarlet Devil by itself.
 
 How to run
 ------------
-Start Touhou 6 - Embodiment of Scarlet Devil, run 'train.py' with administrator rights, click the game's window to gain focus and wait for profit maybe?
+Start Touhou 6 - Embodiment of Scarlet Devil, run 'train.py' with administrator rights, click the game's window to gain focus on it, and wait for profit.
 
 About this bot
 -------------
-My attempt at using a Deep-Q-Learning algorithm to train a model which plays Touhou 6.
+This is my first attempt at using a Deep-Q-Learning algorithm to train a model which learns how to play a game.
