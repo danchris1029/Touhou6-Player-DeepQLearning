@@ -7,7 +7,7 @@ tf.disable_eager_execution()
 
 import numpy as np
 
-print(os.path)
+#print(os.path)
 class DeepQNetwork(object):
     def __init__(self, lr, n_actions, name, input_dims,
                   fc1_dims = 256, fc2_dims=256, chkpt_dir='./checkpoint'):
@@ -45,7 +45,7 @@ class DeepQNetwork(object):
             self.train_op = tf.train.AdamOptimizer(self.lr).minimize(self.loss)
             
     def load_checkpoint(self):
-        print(".... loading checkpoint ....")
+        #print(".... loading checkpoint ....")
         self.saver.restore(self.sess, self.checkpoint_file)
     
     def save_checkpoint(self):
@@ -74,6 +74,8 @@ class Agent(object):
         
     def store_transition(self, state, action, reward, state_, terminal):
         index = self.mem_cntr % self.mem_size
+        #print("mem_size: ", self.mem_size)
+        print("index stored at: ", index)
         self.state_memory[index] = state
         self.new_state_memory[index] = state_
         self.reward_memory[index] = reward
@@ -86,6 +88,7 @@ class Agent(object):
     def choose_action(self, state):
         state = state[np.newaxis, :]
         rand = np.random.random()
+        
         if rand < self.epsilon:
             action = np.random.choice(self.action_space)
         else:
@@ -125,6 +128,8 @@ class Agent(object):
                                     feed_dict={self.q_eval.input: state_batch,
                                                self.q_eval.actions: action_batch,
                                                self.q_eval.q_target: q_target})
+            
+            #writer = tf.summary.FileWriter('./graphs', self.q_eval.sess.graph)
             
             self.epsilon = self.epsilon*self.epsilon_dec if self.epsilon > \
                             self.epsilon_end else self.epsilon_end
