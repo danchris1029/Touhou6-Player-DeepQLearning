@@ -1,5 +1,5 @@
 # Touhou6-Player-DeepQLearning
-I saw the project over at https://github.com/feinomenon/TouhouPlayer and and was inspired to build a bot that learns how to play Touhou 6: Embodiment of Scarlet Devil by itself.
+I saw a similar project over at https://github.com/feinomenon/TouhouPlayer and was inspired to build a bot that learns how to play Touhou 6: Embodiment of Scarlet Devil by itself.
 
 How to run
 ------------
