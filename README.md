@@ -3,7 +3,7 @@ I saw the project over at https://github.com/feinomenon/TouhouPlayer and and was
 
 How to run
 ------------
-Start Touhou 6 - Embodiment of Scarlet Devil, run 'train.py' with administrator rights, click the game's window to gain focus on it, and wait for profit.
+Start Touhou 6 - Embodiment of Scarlet Devil, run 'train.py', click the game's window to gain focus on it, and wait for profit.
 
 About this bot
 -------------
